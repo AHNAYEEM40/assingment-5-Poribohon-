@@ -1,0 +1,26 @@
+<svg width="72.000000" height="72.000000" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_6_50_dd" x="0.000000" y="0.000000" width="72.000000" height="72.000000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="0" dy="4"/>
+			<feGaussianBlur stdDeviation="1.33333"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_1" result="shape"/>
+		</filter>
+		<clipPath id="clip6_50">
+			<rect id="tabler-icon-bus-stop" width="64.000000" height="64.000000" transform="translate(4.000000 0.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g filter="url(#filter_6_50_dd)">
+		<rect id="tabler-icon-bus-stop" width="64.000000" height="64.000000" transform="translate(4.000000 0.000000)" fill="#FFFFFF" fill-opacity="0"/>
+		<g clip-path="url(#clip6_50)">
+			<path id="Vector" d="M12.781 8.78101C13.2811 8.28101 13.9595 8 14.6666 8L20 8C20.7073 8 21.3855 8.28101 21.8856 8.78101C22.3857 9.28113 22.6666 9.95947 22.6666 10.6666L22.6666 21.3334C22.6666 22.0405 22.3857 22.7189 21.8856 23.219C21.3855 23.719 20.7073 24 20 24L14.6666 24C13.9595 24 13.2811 23.719 12.781 23.219C12.281 22.7189 12 22.0405 12 21.3334L12 10.6666C12 9.95947 12.281 9.28113 12.781 8.78101ZM48.2288 49.1046C49.229 50.1047 50.5856 50.6666 52 50.6666C53.4146 50.6666 54.771 50.1047 55.7712 49.1046C56.7715 48.1044 57.3334 46.7478 57.3334 45.3334C57.3334 43.9188 56.7715 42.5623 55.7712 41.5621C54.771 40.5619 53.4146 40 52 40C50.5856 40 49.229 40.5619 48.2288 41.5621C47.2285 42.5623 46.6666 43.9188 46.6666 45.3334C46.6666 46.7478 47.2285 48.1044 48.2288 49.1046ZM30.6666 13.3334L49.3334 13.3334C56.696 13.3334 62.6666 21.6907 62.6666 32L62.6666 45.3334L57.3334 45.3334M46.6666 45.3334L25.3334 45.3334M46.6666 13.3334L50.6666 32L62.6666 32M29.3334 26.6666L49.3334 26.6666M36 13.3334L36 26.6666M17.3334 24L17.3334 53.3334" stroke="#1DD100" stroke-opacity="1.000000" stroke-width="4.000000" stroke-linejoin="round"/>
+		</g>
+	</g>
+</svg>
