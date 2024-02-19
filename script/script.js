@@ -1,2 +1,6 @@
-const allBtn =document.getElementsByClassName("add-button");
-console.log(allBtn);
+const a = document.getElementsByClassName("seats")
+for (const seat of a) {
+    console.log(seat)
+    
+}
+

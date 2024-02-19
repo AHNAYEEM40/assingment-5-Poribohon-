@@ -188,17 +188,17 @@
 <button class="ml-[420px] mt-4"><img src="images/Group 56.svg" alt=""></button>
 <div class="flex space-x-8">
   <h1 class="mt-2">A</h1>
-  <button id="btn" class="btn btn-active btn-ghost w-24">A1</button>
-  <button id="btn" class="btn btn-active btn-ghost w-24">A2</button>
-  <button id="btn" class="btn btn-active btn-ghost w-24">A3</button>
-  <button id="btn" class="btn btn-active btn-ghost w-24">A4</button>
+  <button  class="seats  btn btn-active btn-ghost w-24">A1</button>
+  <button  class="seats  btn btn-active btn-ghost w-24">A2</button>
+  <button  class="seats  btn btn-active btn-ghost w-24">A3</button>
+  <button  class="seats  btn btn-active btn-ghost w-24">A4</button>
 </div>
 <div class="flex space-x-8 space-y-2">
   <h1 class="mt-4">B</h1>
-  <button id="btn" class="btn btn-active btn-ghost w-24">B1</button>
-  <button id="btn" class="btn btn-active btn-ghost w-24">B2</button>
-  <button id="btn" class="btn btn-active btn-ghost w-24">B3</button>
-  <button id="btn" class="btn btn-active btn-ghost w-24">B4</button>
+  <button  class="seats btn btn-active btn-ghost w-24">B1</button>
+  <button  class="seats btn btn-active btn-ghost w-24">B2</button>
+  <button  class="seats btn btn-active btn-ghost w-24">B3</button>
+  <button  class="seats btn btn-active btn-ghost w-24">B4</button>
 </div>
 </div>
         <div>
@@ -206,18 +206,32 @@
            <div class="ml-8 mt-4">
             <h1 class="text-2xl font-semibold ">Select Your Sets</h1>
             <hr>
-     <div class="bg-gray-400 rounded-xl">
-      <div class="flex space-x-28 text-xl mt-10">
-        <p>Sets </p>
+     <div class="bg-gray-200 p-3 rounded-xl">
+      <div class="flex space-x-28 text-xl py-5 text-center">
+        <p>Sets <span>0</span> </p>
         <p>Class</p>
         <p>Price</p>
          <hr>
+        </div>
+      <div class="border-b border-t border-dashed border-gray-500 py-5 " id="ticket">
+        <div class="flex space-x-28 text-xl text-center ">
+          <p>A1</p>
+          <p>Economoy</p>
+          <p>BDT 550 </p>
+          
+          </div>
       
         </div>
-        <h1> Total Price <span>0</span> BDT</h1>
+        <div class="flex justify-between items-center py-2">
+          <h1> Total Price </h1>
+          <h1><span id="total-price">0</span>BDT</h1>
+        </div>
         <div class=""><input type="text" placeholder="Have any Coupon" class="input input-bordered input-info w-full " />
           <button class="btn btn-success -ml-20">Apply</button>
-          <h1> Grant Price <span>0</span> BDT</h1>
+          <div class="flex justify-between items-center py-2">
+            <h1> Grant Price </h1>
+            <h1><span id="Grant-price">0</span>BDT</h1>
+          </div>
           <button class="btn btn-success w-full">Success</button>
       </div>
      </div>
@@ -241,7 +255,7 @@
 
     
     </main>
-    <script src="script/script.js"></script>
+    <script src="./script/script.js"></script>
 </body>
 </html>
 
