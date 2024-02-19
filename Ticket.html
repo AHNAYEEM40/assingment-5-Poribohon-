@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A H Poribohon</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar bg-base-100 px-52">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            ></ul>
+          </div>
+          <a class="btn btn-ghost text-2xl">AH-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn">Bus<img src="images/bus-icon.png" alt="" /> </a>
+        </div>
+      </div>
+    </header>
+    <main class="w-11/12 m-auto">
+      <section class="w-full relative">
+        <div
+          class="hero min-h-screen w-full rounded-2xl"
+          style="background-image: url(./images/banner.png)"
+        >
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-4xl font-bold">
+                End-To-End Travel with
+                <span class="text-green-700">AH Poribohon</span>
+              </h1>
+              <p class="mb-5">
+                Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                assumenda excepturi exercitationem quasi. In deleniti eaque aut
+                repudiandae et a id nisi.
+              </p>
+              <button class="btn btn-primary">Buy Ticket</button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="absolute flex flex-row justify-between items-center w-11/12 left-1/2 -translate-x-1/2 -bottom-16"
+        >
+          <div class="w-[300px] h-[138px] bg-slate-300 flex rounded-3xl">
+            <img
+              class="h-24 w-24 mt-4 ml-4"
+              src="images/people.png"
+              alt=""
+              srcset=""
+            />
+            <div>
+              <h2 class="text-2xl font-bold mb-2 pt-8">500K+</h2>
+              <p>Registered User</p>
+            </div>
+          </div>
+
+          <div class="flex bg-slate-300 w-[300px] h-[138px] rounded-3xl">
+            <img
+              class="h-28 w-28 mt-4 ml-4"
+              src="images/ticket-cupon.png"
+              alt=""
+              srcset=""
+            />
+            <div class="mt-10">
+              <h2 class="text-2xl font-bold">1.7 lackes</h2>
+              <p>Ticket sold</p>
+            </div>
+          </div>
+
+          <div
+            class="flex bg-slate-300 w-[300px] h-[138px] rounded-3xl space-x-2"
+          >
+            <img
+              class="h-28 w-28 mt-4 ml-4"
+              src="images/stoppage.png"
+              alt=""
+              srcset=""
+            />
+            <div class="mt-10">
+              <h2 class="text-2xl font-bold">80k</h2>
+              <p>Rentel Pertner</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-28">
+        <h1 class="text-3xl font-bold text-center my-10">
+          Best offers for you
+        </h1>
+        <div class="flex space-x-6 mt-4">
+          <div class="bg-yellow-400 flex w-[550px] h-48 rounded-2xl">
+            <div class="mt-10 ml-8">
+              <h1 class="text-3xl font-bold">15% OFF</h1>
+              <p>on your next purchase</p>
+              <p>use by march 2024</p>
+            </div>
+            <div>
+              <img class="ml-24 h-48" src="images/cupon-devider.png" alt="" />
+            </div>
+            <div class="mt-10">
+              <h1 class="text-4xl font-bold">NEW15</h1>
+              <p>Coupon Code</p>
+            </div>
+          </div>
+
+          <div>
+            <div class="bg-[#F78C9C] flex w-[550px] h-48 rounded-2xl">
+              <div class="mt-10 ml-8">
+                <h1 class="text-3xl font-bold">20% OFF</h1>
+                <p>on your next purchase</p>
+                <p>use by march 2024</p>
+              </div>
+              <div>
+                <img class="ml-24 h-48" src="images/cupon-devider.png" alt="" />
+              </div>
+              <div class="mt-10">
+                <h1 class="text-4xl font-bold">Couple 20</h1>
+                <p>Coupon Code</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-14">
+          <img class="mx-auto" src="images/Frame 4.svg" alt="" srcset="" />
+        </div>
+      </section>
+      <section class="mt-4 border-solid border-2 border-green-500 rounded-2xl">
+        <h1 class="text-center text-2xl font-semibold">A H Poribohon</h1>
+        <p class="text-center">
+          Various services related to registration of vehicle/already registered
+          vehicle like Appointment Booking, Application Status, Duplicate
+          Registration, Change of Address, Transfer of Ownership, Hypothecation,
+          etc.
+        </p>
+        <div class="bg-gray-50 flex">
+          <div class="bg-[#FFFFFF] w-[1100px] h-[400px] rounded-2xl">
+            <div class="grid grid-cols-2 space-x-16">
+              <div class="mt-10 flex space-x-2">
+                <img src="images/bus-logo.png" alt="" />
+                <div>
+                  <h1 class="text-3xl font-bold">A H Poribohon</h1>
+                  <p>Coach-009-WEB ! AC_Business</p>
+                </div>
+              </div>
+              <div
+                class="flex border-solid border-2 border-green-500 rounded-2xl w-36 h-14 mt-9 items-center bg-green-300"
+              >
+                <img class="" src="images/seat-green-filled.png" alt="" />
+                <button class="btn btn-ghost"><span id="availableSeat">40</span> Sets Left</button>
+              </div>
+            </div>
+            <div
+              class="w-[780px] h-[200px] bg-gray-200 pt-10 rounded-xl pl-2 mt-4"
+            >
+              <div
+                class="flex pl-4 space-x-96 bg-gray-100 rounded-xl space-y-4 items-center w-[700px]"
+              >
+                <h1>Route</h1>
+                <h1>Dhaka-Sylhet</h1>
+              </div>
+              <hr class="w-[700px]" />
+              <div
+                class="flex pl-4 space-x-80 bg-gray-100 rounded-2xl space-y-4 mt-2 items-center w-[700px]"
+              >
+                <h1>Departure Time</h1>
+                <h1>9:00Pm</h1>
+              </div>
+              <div class="flex mt-4 space-x-14 pl-2">
+                <h1 class="bg-gray-300 w-48 h-9 rounded-xl text-center">
+                  Border Point-Laxmipur
+                </h1>
+                <h1 class="bg-gray-300 w-48 h-9 rounded-xl text-center">
+                  Dropping Point - Bogura
+                </h1>
+                <h1 class="bg-gray-300 w-48 h-9 rounded-xl text-center">
+                  Est. Time - 11 Hour
+                </h1>
+              </div>
+            </div>
+          </div>
+
+          <img class="h-[410px]" src="images/info-devider.png" alt="" />
+          <div>
+            <div class="pr-28 mt-28">
+              <img src="images/fare.png" alt="" />
+              <h1 class="text-xl font-bold">550 Taka</h1>
+              <p>Per Sets</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-[#FFFFFF] w-[1100px] h-[400px] flex rounded-2xl">
+          <div class="ml-4 mt-4">
+            <div>
+              <h1 class="text-2xl font-semibold">Select Your Sets</h1>
+              <hr />
+            </div>
+            <div class="flex space-x-[350px]">
+              <div class="flex">
+                <img src="images/seat-gray.png" alt="" />
+                <h1>Available</h1>
+              </div>
+              <div class="flex">
+                <img src="images/seat-green-filled.png" alt="" />
+                <h1>Selected</h1>
+              </div>
+            </div>
+            <hr class="w-1/2" />
+            <button class="ml-[420px] mt-4">
+              <img src="images/Group 56.svg" alt="" />
+            </button>
+
+            <!-- Seat button Start  -->
+            <div class="flex space-x-8">
+              <h1 class="mt-2">A</h1>
+              <button class="seats btn btn-active btn-ghost w-24">A1</button>
+              <button class="seats btn btn-active btn-ghost w-24">A2</button>
+              <button class="seats btn btn-active btn-ghost w-24">A3</button>
+              <button class="seats btn btn-active btn-ghost w-24">A4</button>
+            </div>
+            <div class="flex space-x-8 space-y-2">
+              <h1 class="mt-4">B</h1>
+              <button class="seats btn btn-active btn-ghost w-24">B1</button>
+              <button class="seats btn btn-active btn-ghost w-24">B2</button>
+              <button class="seats btn btn-active btn-ghost w-24">B3</button>
+              <button class="seats btn btn-active btn-ghost w-24">B4</button>
+            </div>
+            <!-- Seat button end  -->
+          </div>
+          <div>
+            <div class="ml-8 mt-4">
+              <h1 class="text-2xl font-semibold">Select Your Sets</h1>
+              <hr />
+              <div class="bg-gray-200 p-3 rounded-xl">
+                <div class="flex space-x-28 text-xl py-5 text-center">
+                  <p>Sets <span id="count">0</span></p>
+                  <p>Class</p>
+                  <p>Price</p>
+                  <hr />
+                </div>
+                <div
+                  class="border-b border-t border-dashed border-gray-500 py-5"
+                  id="ticketList"
+                ></div>
+                <div class="flex justify-between items-center py-2">
+                  <h1>Total Price</h1>
+                  <h1><span id="total-price">0</span>BDT</h1>
+                </div>
+                <div class="">
+                  <div class="flex flex-row">
+                    <input
+                      type="text"
+                      placeholder="Have any Coupon"
+                      class="input input-bordered input-info w-full rounded-lg rounded-r-none"
+                    />
+                    <button class="bg-green-400 px-7 rounded-r-lg">
+                      Apply
+                    </button>
+                  </div>
+                  <div class="flex justify-between items-center py-2">
+                    <h1>Grant Price</h1>
+                    <h1><span id="Grant-price">0</span>BDT</h1>
+                  </div>
+
+                  <form>
+                    <input
+                      class="w-full py-3 rounded-lg px-3"
+                      type="text"
+                      placeholder="Your name"
+                    />
+                  </form>
+                  <button class="btn btn-success w-full">Success</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Congratulation massage  -->
+      <section class="hidden">
+        <div
+          class="w-[700px] h-[350px] bg-zinc-100 ml-11 items-center text-center mt-4"
+        >
+          <img class="ml-72 pt-6" src="images/success.png" alt="" />
+          <div class="mt-6 space-y-4">
+            <h1>SUCCESS</h1>
+            <p>
+              Thank You For Booking Our Bus Seats. <br />We are working hard to
+              find the best servise and deals for you
+            </p>
+            <p>Shortly you will find a confirmation in your email</p>
+            <button class="btn btn-success rounded-xl">Continue</button>
+          </div>
+        </div>
+      </section>
+      <!-- Congra end -->
+    </main>
+    <script src="script/script.js"></script>
+  </body>
+</html>
