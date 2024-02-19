@@ -6,13 +6,18 @@ for (const seat of a) {
   const ticketList = document.getElementById('ticketList');
 
 //   ticket sets
-  const availableSeat = document.getElementById('availableSeat');
-  const available = parseInt(availableSeat.innerText);
-  seat.addEventListener('click', function (e) {
+  const availableSeats = document.getElementById('availableSeat');
+  const available =availableSeats.innerText;
+  const LastSeats=parseInt(available);
+  const sitCount =LastSeats -1;
+  availableSeats.innerText=sitCount;
+   seat.addEventListener('click', function (e) {
     const btnText = e.target.innerText;
+
     count += 1;
-    availableSeat.innerText = available -1;
+   
     seatCount.innerText = count;
+    e.target.style.backgroundColor ="green";
 
     const createList = document.createElement('div');
     createList.innerHTML = `<div class="flex space-x-28 text-xl text-center">
@@ -32,15 +37,21 @@ for (const seat of a) {
     const grantTotal=document.getElementById("Grant-price").innerText;
     const covertedGrantTotalCost=parseInt(grantTotal);
     const sum =covertedGrantTotalCost +parseInt(price);
-
+   
     
  setInnerText("total-price",sum2)
  setInnerText("Grant-price",sum);
+ setTextElementValueById("availableSeat",40);
 
   });
 }
 function setInnerText(id,value){
     document.getElementById(id).innerText =value;
+}
+
+function setTextElementValueById(elementId, value){
+  const element = document.getElementById(elementId);
+  element.innerText = value -+1;
 }
 
 // cupon section
