@@ -7,6 +7,7 @@
     
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style/style.css">
 
 </head>
 <body>
@@ -135,7 +136,7 @@
              </div>
              <div class="flex border-solid border-2 border-green-500 rounded-2xl w-36 h-14 mt-9 items-center bg-green-300">
               <img class="" src="images/seat-green-filled.png" alt="">
-              <button class="btn btn-ghost">40 Sets Left</button>
+              <button class="btn btn-ghost"><span>40</span> Sets Left</button>
              </div>
         </div>
                 <div class="w-[780px] h-[200px] bg-gray-200 pt-10 rounded-xl pl-2 mt-4">
@@ -187,17 +188,17 @@
 <button class="ml-[420px] mt-4"><img src="images/Group 56.svg" alt=""></button>
 <div class="flex space-x-8">
   <h1 class="mt-2">A</h1>
-  <button class="btn btn-active btn-ghost w-24">A1</button>
-  <button class="btn btn-active btn-ghost w-24">A2</button>
-  <button class="btn btn-active btn-ghost w-24">A3</button>
-  <button class="btn btn-active btn-ghost w-24">A4</button>
+  <button id="btn" class="btn btn-active btn-ghost w-24">A1</button>
+  <button id="btn" class="btn btn-active btn-ghost w-24">A2</button>
+  <button id="btn" class="btn btn-active btn-ghost w-24">A3</button>
+  <button id="btn" class="btn btn-active btn-ghost w-24">A4</button>
 </div>
 <div class="flex space-x-8 space-y-2">
   <h1 class="mt-4">B</h1>
-  <button class="btn btn-active btn-ghost w-24">B1</button>
-  <button class="btn btn-active btn-ghost w-24">B2</button>
-  <button class="btn btn-active btn-ghost w-24">B3</button>
-  <button class="btn btn-active btn-ghost w-24">B4</button>
+  <button id="btn" class="btn btn-active btn-ghost w-24">B1</button>
+  <button id="btn" class="btn btn-active btn-ghost w-24">B2</button>
+  <button id="btn" class="btn btn-active btn-ghost w-24">B3</button>
+  <button id="btn" class="btn btn-active btn-ghost w-24">B4</button>
 </div>
 </div>
         <div>
@@ -213,10 +214,10 @@
          <hr>
       
         </div>
-        <h1> Total Price BDT</h1>
+        <h1> Total Price <span>0</span> BDT</h1>
         <div class=""><input type="text" placeholder="Have any Coupon" class="input input-bordered input-info w-full " />
           <button class="btn btn-success -ml-20">Apply</button>
-          <h1> Grant Price BDT</h1>
+          <h1> Grant Price <span>0</span> BDT</h1>
           <button class="btn btn-success w-full">Success</button>
       </div>
      </div>
@@ -226,9 +227,21 @@
       
         </div>
         </section>
+        <section class="pl-80 hidden ">
+      <div class="w-[700px] h-[350px] bg-zinc-100 ml-11 items-center text-center mt-4">
+        <img class="ml-72 pt-6" src="images/success.png" alt="">
+        <div class=" mt-6 space-y-4">
+           <h1>SUCCESS</h1>
+          <p>Thank You For Booking Our Bus Seats. <br>We are working hard to find the best servise and deals for you</p>
+          <p>Shortly you will find a confirmation in your email</p>
+          <button class="btn btn-success rounded-xl">Continue</button>
+        </div>
+      </div>
+        </section>
 
     
     </main>
+    <script src="script/script.js"></script>
 </body>
 </html>
 
