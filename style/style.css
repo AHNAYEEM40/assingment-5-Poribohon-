@@ -1,0 +1,4 @@
+#ticketList ul{
+    display:flex;
+    gap: 140px;
+}

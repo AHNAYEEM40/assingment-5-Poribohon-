@@ -1,29 +1,30 @@
-const seats =document.getElementsByClassName('seats');
+const allBtn = document.getElementsByClassName('seat-button');
 let count = 0;
 let seatLeft = 40;
 let totalPrice = 0;
-for( const seat of seats){
-    seat.addEventListener('click',function(e){
-        count +=1;
-        seatLeft -=1;
-        totalPrice = totalPrice +500;
-        document.getElementById('selected-seat').innerText = count;
+for (const btn of allBtn) {
+    btn.addEventListener('click', function (e) {
+        count = count + 1;
+        seatLeft = seatLeft - 1;
+        totalPrice = totalPrice + 500;
+        document.getElementById('seat').innerText = count;
         document.getElementById('seat-left').innerText = seatLeft;
-       
+        btn.classList.add('bg-green-500');
         e.target.style.background ='green'
         e.target.style.color ='white'
-
+        
 
         if (count > 0 || count < 4) {
-            document.getElementById('apply-btn').removeAttribute('disabled');
-            document.getElementById('success-btn').removeAttribute('disabled');
+            document.getElementById('btn-next').removeAttribute('disabled');
+            document.getElementById('btn-coupon').removeAttribute('disabled');
             
         }
         if (count >= 4) {
-            seat.setAttribute('disabled', seat)
+            btn.setAttribute('disabled', btn)
         }
 
-        const ticketList = document.getElementById('ticketList');
+
+        const selectedSeat = document.getElementById('selected-seat');
         const ul = document.createElement('ul')
         const createdSet = document.createElement('li');
         const Economy = document.createElement('li');
@@ -31,14 +32,14 @@ for( const seat of seats){
 
 
 
-        createdSet.innerText = seat.innerText;
+        createdSet.innerText = btn.innerText;
         Economy.innerText = 'Economoy';
         createdPrice.innerText = '500';
 
         ul.appendChild(createdSet);
         ul.appendChild(Economy);
         ul.appendChild(createdPrice);
-        ticketList.appendChild(ul);
+        selectedSeat.appendChild(ul);
         document.getElementById('total-price').innerText = totalPrice;
         document.getElementById('grand-total').innerText = totalPrice;
         e.target.setAttribute("disabled", true);
@@ -49,8 +50,8 @@ for( const seat of seats){
 const phn = document.getElementById('phone-number').value;
 console.log(phn)
 
-document.getElementById('apply-btn').addEventListener('click', function () {
-    const coupon = document.getElementById('coupon-one').innerText;
+document.getElementById('btn-coupon').addEventListener('click', function () {
+    const coupon = document.getElementById('coupon-discount').innerText;
     if (coupon === 'Couple 20') {
 
         const grandMoney = totalPrice - (totalPrice * 20 / 100);
@@ -68,7 +69,7 @@ document.getElementById('apply-btn').addEventListener('click', function () {
         alert('invalid coupon');
         return;
     }
-    document.getElementById('btn-hide').classList.add('hidden')
+    document.getElementById('coupon-input').classList.add('hidden')
 })
 const showModal = (e) => {
     const number = document.getElementById('phone-number')
