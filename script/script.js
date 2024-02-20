@@ -76,6 +76,6 @@ const showModal = (e) => {
         my_modal_1.showModal();
 
     } else {
-        return alert('wrong number');
+        return alert('Mia Age Right Number Likhen ');
     }
 };
